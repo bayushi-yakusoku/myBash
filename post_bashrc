@@ -1,0 +1,18 @@
+_DIR_MYBASH=$HOME/.myBash
+
+fic_bash_aliases=$_DIR_MYBASH/bash_aliases
+if [ -f $fic_bash_aliases ]; then
+  . $fic_bash_aliases
+fi
+
+export _BLUE='\e[34m'
+export _LBLUE='\e[94m'
+export _GREEN='\e[32m'
+export _LGREEN='\e[92m'
+export _YELLOW='\e[33m'
+export _LYELLOW='\e[93m'
+export _DFT='\e[39m'
+export _WHITE='\e[97m'
+
+export PS1="\n${_LGREEN}[${_GREEN}\H${_LGREEN}][${_GREEN}\u${_LGREEN}][${_LYELLOW}\t${_LGREEN}]\n  ${_LBLUE}\$(pwd)${_DFT}\n\\$ \[$(tput sgr0)\]"
+
