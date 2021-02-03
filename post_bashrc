@@ -5,6 +5,11 @@ if [ -f $fic_bash_aliases ]; then
   . $fic_bash_aliases
 fi
 
+fic_bash_functions=$_DIR_MYBASH/bash_functions
+if [ -f $fic_bash_functions ]; then
+  . $fic_bash_functions
+fi
+
 export _RED='\e[31m'
 export _LRED='\e[91m'
 export _BLUE='\e[34m'
